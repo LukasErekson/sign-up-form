@@ -22,37 +22,57 @@
     
   </div>
 
-  <div class="form-container">
+  <div class="main-container">
     <div class="form-preface">
       <p>Cat Chats is (unfortuantely) not a real online service... yet. If you like pictures of cute cats and want to support a business dedicated to helping cats find good homes, sign up now!</p>
 
       <p>It's for the cats.</p>
     </div>
 
-    <form action="/" method="post" id="sign-up">
+    <div class="form-container">
+
       <h2>Let's get started!</h2>
 
-      <label for="first-name">First Name</label>
-      <input type="text" name="f_name" id="first-name">
+      <form action="/" method="post" id="sign-up">
+        <div class="input-col">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="f_name" id="first-name">
+          </div>
+      
+          <div class="input-group">
+            <label for="email">Email<abbr title="required">*</abbr></label>
+            <input type="email" name="email" id="email" required>
+          </div>
+      
+          <div class="input-group">
+            <label for="password">Password<abbr title="required">*</abbr></label>
+            <input type="password" name="password" id="password" required>
+          </div>
+        </div>
+        <div class="input-col">
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="l_name" id="last-name">
+          </div>
 
-      <label for="last-name">Last Name</label>
-      <input type="text" name="l_name" id="last-name">
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone_number" id="phone" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890">
+          </div>
 
-      <label for="email">Email<abbr title="required">*</abbr></label>
-      <input type="email" name="email" id="email" required>
+          <div class="input-group">
+            <label for="password-confirmation">Confirm Password<abbr title="required">*</abbr></label>
+            <input type="password" name="password-confirmation" id="password-confirmation" required>
+          </div>
 
-      <label for="last-name">Phone Number</label>
-      <input type="text" name="phone_number" id="phone" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890">
-
-      <label for="password">Password<abbr title="required">*</abbr></label></label>
-      <input type="password" name="password" id="password" required>
-
-      <label for="password-confirmation">Confirm Password<abbr title="required">*</abbr></label></label>
-      <input type="password" name="password-confirmation" id="password-confirmation" required>
-
-    </form>
+        </div>
+      </form>
+    </div>
 
     <div class="form-submit">
+      <abbr title="required">* Required Fields</abbr>
+
       <button type="submit" form="sign-up">Create Account</button>
 
       <p>Already have an account? <a href="">Log in</a></p>
