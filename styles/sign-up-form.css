@@ -110,3 +110,28 @@ form {
 .form-submit {
     padding: 0 3rem;
 }
+
+.form-submit button {
+    border: none;
+    border-radius: 8px;
+
+    padding: .75rem 3rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgb(255, 159, 68);
+
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background-color: rgb(245, 164, 88);
+    transition: .5s;
+}
+
+.form-submit a {
+    color: rgb(245, 164, 88);
+    font-weight: bold;
+    text-decoration: none;
+}
