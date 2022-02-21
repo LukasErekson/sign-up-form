@@ -10,7 +10,7 @@ body {
 
 .image-bg {
     height: clamp(80vh, 100vh, 100vh);
-    background: no-repeat calc(max(-200px, -25vw)) calc(max(-300px, -25vh))/clamp(100vh, 100vw, 900px) url("../images/pexels-tatiana-аzatskaya-3616232.jpg") lightgray;
+    background: no-repeat center/clamp(100vh, 100vw, 900px) url("../images/pexels-tatiana-аzatskaya-3616232.jpg") lightgray;
     /* Shorthand for the following properties: */
     /* background-repeat: no-repeat; */
     /* background-position: calc(max(-200px, -25vw)) calc(max(-300px, -25vh)); */
@@ -43,6 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, .3);
+    margin-top: 2.5rem;
 }
 
 .logo-container h1 {
@@ -72,9 +73,7 @@ form {
     flex-direction: row;
 }
 
-@media only screen and (max-height: 600px) {
-    /* Keep the cat cener of focus even on smaller heights */
-    .image-bg {
-        background-position: calc(max(-200px, -25vw))calc(max(-200px, -80vh));
-    }
+.input-col {
+    display: flex;
+    flex-direction: column;
 }
