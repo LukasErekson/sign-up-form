@@ -67,7 +67,7 @@ abbr {
 
 .main-container {
     max-width: max(60vw, 200px);
-    flex-grow: 3;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,4 +152,34 @@ form {
     color: rgb(245, 164, 88);
     font-weight: bold;
     text-decoration: none;
+}
+
+
+/* Wrap for smaller/thinner screens */
+@media only screen and (max-width: 960px) {
+
+    body {
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        margin-top: 0;
+    }
+
+    .photo-credit {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .main-container {
+        max-width: 100%;
+    }
+
+    .form-submit {
+        text-align: center;
+    }
+
+    .image-bg {
+        height: 200px;
+        background-size: 100% auto;
+    }
 }
