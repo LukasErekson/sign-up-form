@@ -120,7 +120,7 @@ form {
     font-size: 1rem;
 }
 
-.input-group input:invalid {
+.input-group input:invalid:focus {
     outline: 2px solid rgba(255, 0, 0, .75);
 }
 
