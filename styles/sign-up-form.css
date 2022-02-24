@@ -90,16 +90,23 @@ abbr {
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    flex-grow: 1;
     gap: 2rem;
 }
 
-.input-col {
+.input-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input-group {
     flex-grow: 1;
-    gap: .5rem;
+    max-width: 40ch;
 }
 
 .input-group label {
